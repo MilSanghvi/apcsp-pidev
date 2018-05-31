@@ -50,24 +50,6 @@ int main()
   strcpy(StudentArr[0].firstname, firstname);
   strcpy(StudentArr[0].lastname, lastname);
   StudentArr[0].age = age;
- fgets(input, 256, stdin);
-  sscanf(input, "%s", lastname);
-  printf("What is your first student's age?\n");
-  while (1)
-  {
-        fgets(input, 256, stdin);
-        if (sscanf(input, "%d", &age) == 1) break;
-        printf("Not a valid age - try again!\n");
-  }
-  printf("What is your first student's student id?\n");
-  //fgets(input, 256, stdin);
-  //sscanf(input, "%s", studentid);
-  while (1)
-  {
-        fgets(input, 256, stdin);
-        if (sscanf(input, "%d", &studentid) == 1) break;
-        printf("Not a student id - try again!\n");
-  }
   strcpy(student1.firstname, firstname);
   strcpy(student1.lastname, lastname);
   student1.age = age;
@@ -137,4 +119,5 @@ void printStudent(struct Students* student)
   printf(" Age: %d\n", student->age);
   printf(" Student id: %d\n", student->studentid);
 }
+ 
 
